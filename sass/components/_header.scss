@@ -6,15 +6,14 @@
 /* логотип */
 .logo_header {
     color: var(--accent-text);
+    @include font(700, 26px, 1.19, 0.03em);
+    
 
     margin-right: 93px;
         padding-top: 24px;
         padding-bottom: 25px;
         display: block;
         font-family: 'Raleway', sans-serif;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 1.19;
         text-decoration: none;
 
         &--accent {
@@ -49,15 +48,13 @@
 }
 
 .navigation_list .navigation_link {
+@include font(500, 14px, 1.2, 0.02em);
+
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 
     color: var( --primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
     text-decoration: none;
 
          &:hover,
@@ -128,11 +125,8 @@
     padding-bottom: 32px;
     margin-right: 0;
 
+    @include font(500, 14px, 1.2, 0.02em);
     color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
     text-decoration: none;
 
 }
@@ -144,7 +138,4 @@
 
 .contact_nav .contact_item.current {
     color: var(--accent-text);
-}
-.navigation_link--current {
-color: var(--accent-text);
 }

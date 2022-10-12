@@ -13,10 +13,9 @@
 .logo_foot {
     display: inline-block;
 
+    @include font(700, 26px, 1.19, 0.03em);
     color: var(--accent-text);
     font-family: Raleway sans-serif;
-    font-size: 26px;
-    font-weight: 700;
     margin-bottom: 20px;
 
         &--accent {
@@ -26,6 +25,7 @@
 
 
 .adress .adress_link{
+
     color: var(--white-color);
     font-style: normal;
     font-family: roboto ;
@@ -67,12 +67,10 @@
     display: inline-block;
     margin-bottom: 20px;
 
+    @include font(700, 14px, 1.14, 0.03em);
+
     font-family: Roboto;
-    font-weight: 700;
     color: var(--white-color);
-    font-size: 14px;
-    line-height: 1.14em;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
@@ -113,13 +111,12 @@
 
 .mailing_title {
     display: inline-block;
+
+    @include font(700, 14px, 1.1, 00.03em);
+
     margin-bottom: 20px;
     font-family: roboto;
-    font-weight: 700;
     color: var(--white-color);
-    font-size: 14px;
-    line-height: 1.1em;
-    letter-spacing: 00.03em;
     text-transform: uppercase;
 
 }
@@ -142,6 +139,8 @@
 }
 
 .mailing_link input {
+    @include font(400, 16px, 1.15, 0.03em);
+
     background-color: var(--background-footer-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     margin-right: 12px;
@@ -150,9 +149,6 @@
     height: 50px;
     padding: 10px;
     font-family: robota;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.15;
     color: var(--white-color);
 
 }

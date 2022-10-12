@@ -1,6 +1,7 @@
 // utilits
 @import "./utils/variables";
 @import "./utils/body";
+@import "./utils/mixin.scss";
  
 // main
 @import "./components/header";
@@ -13,4 +14,4 @@
 @import "./components/portfolio" ;
 
 // modal 
-@import "../sass/modalwindow/modalwindow"
+@import "../sass/modalwindow/modalwindow";
