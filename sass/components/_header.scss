@@ -33,15 +33,19 @@
 .navigation {
     display: flex;
     align-items: center;
-        &_list {
-            display: flex;
+}
+
+.navigation_list {
+    display: flex;
+
+    & .navigation_item {
+            margin-right: 50px;
         }
-            &_list &_item {
-                margin-right: 50px;
-            }
-                &_list &_item:last-child {
-                    margin-right: 0;
-                }
+}
+
+
+.navigation_list .navigation_item:last-child {
+    margin-right: 0;
 }
 
 .navigation_list .navigation_link {
@@ -49,16 +53,18 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    color: var(--primary-text-color);
+    color: var( --primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
 
-             &:hover,
-             & :focus {
-             color: var(--accent-text);}
+         &:hover,
+        &:focus {
+            color: var(--accent-text);
+        }
+
 }
 
 
@@ -66,9 +72,10 @@
 .navigation_link--current {
     color: var(--accent-text);
     position: relative;
-    display: block; 
+    display: block;
 
-    &--current::after {
+    &::after {
+    
             content: "";
             color: var(--accent-text);
             position: absolute;
@@ -86,25 +93,37 @@
 
 
 /* contact-nav */
+.contact_icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contact_item {
+    display: flex;
+    align-items: center;
+}
 
 .contact_nav {
     display: flex;
     margin-left: auto;
 
-        & .contact_item:hover,
+        &.contact_item:hover,
         & .contact_item:focus {
             color: var(--accent-text);
         }
-             &.contact_item.current {
-                color: var(--accent-text);
-            }
 }
 
+.contact_list:first-of-type {
+    margin-right: 50px;
+}
 
+.contact_list:hover svg,
+.contact_list:focus svg {
+    fill: var(--accent-text);
+}
 
 .contact_list .contact_item {
     display: flex;
-    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     margin-right: 0;
@@ -116,20 +135,16 @@
     letter-spacing: 0.02em;
     text-decoration: none;
 
-        &:first-of-type {
-            margin-right: 50px;
-        }
-            &:hover svg,
-            &:focus svg {
-             fill: var(--accent-text);
-            }
-        
-}
-.contact_icon {
-    margin-right: 10px;
-
-    & {
-        fill: currentColor;
-        }
 }
 
+.contact_nav .contact_item:hover,
+.contact_nav .contact_item:focus {
+    color: var(--accent-text);
+}
+
+.contact_nav .contact_item.current {
+    color: var(--accent-text);
+}
+.navigation_link--current {
+color: var(--accent-text);
+}
